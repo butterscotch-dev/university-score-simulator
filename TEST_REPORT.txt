@@ -1,21 +1,23 @@
-岡山大学理系・前期のみ版 回帰テスト
+総合回帰テスト: PASS
+records=1754
+contexts=132
+uniform-rate contexts x 5=660, error=0
+minimum/average boundary cases=5006, error=0
+main UI tests=17/17 PASS
+special UI tests=13/13 PASS
+all-context UI missing/NaN/undefined=0
+browser pageerror=0
+CSV rows=1754, columns=35, malformed rows=0
+JS syntax=PASS
+admissions-data.js unchanged from previous release
+university-config.js unchanged from previous release
 
-全レコード: 1754
-岡山大学: 91
-岡山大学年度別: {2022: 17, 2023: 17, 2024: 19, 2025: 19, 2026: 19}
-岡山大学年度×日程: {(2022, '前期'): 17, (2023, '前期'): 17, (2024, '前期'): 19, (2025, '前期'): 19, (2026, '前期'): 19}
-
-business-key重複（大学×年度×学部×募集単位×日程×方式）: 0
-ctmax+secmax=total不一致: 0
-secWeights合計=secmax不一致: 0
-min>avg: 0
-岡山大学後期レコード: 0
-岡山大学後期専用UI参照: 0
-
-変更差分:
-- 岡山大学2022後期16件のみ削除。
-- 残る1754件のデータ内容は直前版から変更なし。
-- 岡山大学は2022〜2026すべて前期のみ。
-
-前版の全1770件は満点入力時 calcCT=ctmax / calcSec=secmax の回帰テストPASS済み。
-今回の1754件はそのPASS済み集合から後期16件を削除しただけで、残存レコードの内容変更は0。
+神戸大学最低点補完後データ回帰:
+- records: 1,754 / Kobe: 347
+- duplicate business keys: 0
+- total mismatch: 0
+- secWeights mismatch: 0
+- min > avg: 0
+- Kobe min=null: 22 (all official-suppressed)
+- Kobe min=null & unverified: 0
+- node --check admissions-data.js: PASS
