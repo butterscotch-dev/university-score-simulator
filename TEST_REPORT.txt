@@ -1,0 +1,25 @@
+兵庫県立大学追加 回帰テスト
+
+records = 1663
+hyogo_records = 163
+hyogo_by_year:
+  2018 = 19
+  2020 = 20
+  2021 = 20
+  2022 = 20
+  2023 = 20
+  2024 = 20
+  2025 = 20
+  2026 = 24
+
+business_key_duplicates = 0
+ctmax_plus_secmax_mismatch = 0
+secWeights_sum_mismatch = 0
+min_gt_avg = 0
+calcCT_full_input_mismatch = 0
+calcSec_full_input_mismatch = 0
+hyogo_2016_2017_2019_records = 0
+js_syntax = PASS
+
+2020 国際商経学部 経済学・経営学コース 前期 min=904.5 avg=950.4
+2018 全19件 status=B / dataStatus=secondary-verified / verified=false
