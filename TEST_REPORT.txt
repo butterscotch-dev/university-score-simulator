@@ -1,25 +1,21 @@
-兵庫県立大学追加 回帰テスト
+岡山大学理系・前期のみ版 回帰テスト
 
-records = 1663
-hyogo_records = 163
-hyogo_by_year:
-  2018 = 19
-  2020 = 20
-  2021 = 20
-  2022 = 20
-  2023 = 20
-  2024 = 20
-  2025 = 20
-  2026 = 24
+全レコード: 1754
+岡山大学: 91
+岡山大学年度別: {2022: 17, 2023: 17, 2024: 19, 2025: 19, 2026: 19}
+岡山大学年度×日程: {(2022, '前期'): 17, (2023, '前期'): 17, (2024, '前期'): 19, (2025, '前期'): 19, (2026, '前期'): 19}
 
-business_key_duplicates = 0
-ctmax_plus_secmax_mismatch = 0
-secWeights_sum_mismatch = 0
-min_gt_avg = 0
-calcCT_full_input_mismatch = 0
-calcSec_full_input_mismatch = 0
-hyogo_2016_2017_2019_records = 0
-js_syntax = PASS
+business-key重複（大学×年度×学部×募集単位×日程×方式）: 0
+ctmax+secmax=total不一致: 0
+secWeights合計=secmax不一致: 0
+min>avg: 0
+岡山大学後期レコード: 0
+岡山大学後期専用UI参照: 0
 
-2020 国際商経学部 経済学・経営学コース 前期 min=904.5 avg=950.4
-2018 全19件 status=B / dataStatus=secondary-verified / verified=false
+変更差分:
+- 岡山大学2022後期16件のみ削除。
+- 残る1754件のデータ内容は直前版から変更なし。
+- 岡山大学は2022〜2026すべて前期のみ。
+
+前版の全1770件は満点入力時 calcCT=ctmax / calcSec=secmax の回帰テストPASS済み。
+今回の1754件はそのPASS済み集合から後期16件を削除しただけで、残存レコードの内容変更は0。
