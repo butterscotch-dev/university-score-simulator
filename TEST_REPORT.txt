@@ -21,3 +21,20 @@ university-config.js unchanged from previous release
 - Kobe min=null: 22 (all official-suppressed)
 - Kobe min=null & unverified: 0
 - node --check admissions-data.js: PASS
+
+二次一括入力追加 回帰テスト: PASS
+- 二次一括入力 0〜100%: PASS
+- 大阪大学 60%入力（国語/数学/英語/理科①/理科②/地歴）: PASS
+- 採点満点に対する得点率換算: PASS
+- 一括入力後の個別上書き: PASS
+- 0〜100範囲外入力の拒否: PASS
+- 大学切替時の二次一括入力・二次得点リセット: PASS
+- 「その他」欄は一括対象外: PASS
+- 面接・小論文・独立評価項目は一括対象外: PASS
+- 既存の共テ一括入力: PASS
+- 全132コンテキストで二次50%一括入力: PASS
+- browser pageerror / console error: 0
+- admissions-data.js: 前版とSHA-256同一
+- university-config.js: 前版とSHA-256同一
+- 神戸大2026システム情報学部後期: min=757.783 / avg=810.745 維持
+- index.htmlのみ機能追加
